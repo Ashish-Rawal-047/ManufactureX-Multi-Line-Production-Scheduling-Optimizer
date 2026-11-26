@@ -1,0 +1,44 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Testing & coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Generated large datasets and runtime outputs
+data/generated/*.json
+data/generated/*.csv
+data/generated/*_csv/
+results/*.png
+results/*.html
+results/*.csv
+results/*.json
+!results/.gitkeep
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/generated/.gitkeep
+!data/benchmarks/.gitkeep

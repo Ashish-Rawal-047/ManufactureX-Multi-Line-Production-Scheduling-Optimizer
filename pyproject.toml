@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "plantsched"
+version = "0.1.0"
+description = "PlantSched: Multi-Line Production Scheduling & Changeover Optimization System"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24.0",
+    "pandas>=2.0.0",
+    "ortools>=9.8.0",
+    "pulp>=2.7.0",
+    "simpy>=4.1.0",
+    "matplotlib>=3.7.0",
+    "plotly>=5.18.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0,<9.0.0",
+    "nbformat>=5.9.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["plantsched*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
